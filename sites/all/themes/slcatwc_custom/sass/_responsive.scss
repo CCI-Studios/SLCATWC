@@ -1,0 +1,244 @@
+@media screen and (max-device-width:540px), screen and (max-width:540px)
+{
+	#logo
+	{
+		display:block;
+		text-align:center;
+		float:none;
+
+		img 
+		{
+			height:auto;
+			width:400px;
+		}
+	}
+
+	#navigation 
+	{
+		height:auto;
+	}
+
+	#block-system-main-menu
+	{
+		float:none;
+		margin-top:25px;
+
+		ul 
+		{
+			& > li 
+			{
+				display:block;
+				float:none;
+
+				a 
+				{
+					line-height:200%;
+					font-size:30px;
+					padding:0 0 0 54px;
+				}
+			}
+		}
+	}
+
+	#content,
+	#footer .region-footer
+	{
+		margin:0;
+	}
+
+	#main .block,
+	#page-title
+	{
+		float:none;
+		width:100%;
+		margin:15px 0;
+		background-size:cover;
+		background-position:center center;
+		height:310px;
+
+		& > .content 
+		{
+			text-shadow:3px 3px 5px rgba(0,0,0,0.4);
+		}
+	}
+	#page-title 
+	{
+		height:200px!important;
+	}
+
+	#block-block-5
+	{
+		background-size:auto 100%!important;
+	}
+	.not-front
+	{
+		#block-block-5,
+		#block-block-8
+		{
+			height:200px!important;
+		}
+	}
+	#block-block-4,
+	#block-block-5,
+	#block-block-7,
+	#block-block-8,
+	#block-block-9,
+	#block-block-11
+	{
+		.content 
+		{
+			font-size:40px!important;
+		}
+	}
+
+	#footer .block
+	{
+		&.block-footer-1x1,
+		&#block-block-12,
+		&#block-block-13,
+		&#block-block-14
+		{
+			width:32%!important;
+			margin:15px 1%!important;
+			height:0!important;
+			padding-top:32%!important;
+			background-size:auto 100px;
+		}
+		&#block-block-12
+		{
+			margin-left:0!important;
+			background-image:url(../images/bg/fb-footer-large.png);
+		}
+		&#block-block-13
+		{
+			background-image:url(../images/bg/tw-footer-large.png);
+		}
+		&#block-block-14
+		{
+			margin-right:0!important;
+			background-image:url(../images/bg/in-footer-large.png);
+		}
+
+		&#block-block-15,
+		&#block-block-16
+		{
+			width:auto;
+			float:none;
+			clear:left;
+			margin:15px 0;
+			height:200px;
+			background-size:75% auto;
+
+			.content
+			{
+				font-size:36px;
+			}
+		}
+		&#block-block-16 
+		{
+			background-image:url(../images/bg/trillium-large.png);
+		}
+	}
+
+	#block-system-main.block
+	{
+		height:auto;
+		overflow:hidden;
+		margin:0;
+
+		& > .content 
+		{
+			min-height:0;
+		}
+	}
+
+	body.page-news #block-block-8 
+	{
+		width:100%!important;
+	}
+	body.page-news #block-system-main.block .view-news
+	{
+		margin:0;
+
+		.views-row
+		{
+			width:100%!important;
+			height:200px;
+			float:none;
+			margin:15px 0;
+			position:relative;
+			top:0!important;
+			right:0!important;
+			bottom:0!important;
+			left:0!important;
+			
+
+			& > .content
+			{
+				text-align:center!important;
+
+				& > div > div 
+				{
+					vertical-align:middle!important;
+				}
+			}
+
+			.views-field-body 
+			{
+				display:none!important;
+			}
+			.views-field-body-1
+			{
+				font-size:24px!important;
+				line-height:125%!important;
+			}
+			.views-field-created
+			{
+				font-size:24px;
+			}
+
+			.views-field-title
+			{
+				font-size:40px!important;
+				line-height:100%;
+			}
+
+			&.open
+			{
+				overflow:hidden;
+				height:auto;
+
+				& > .content 
+				{
+					position:static;
+					margin:5px;
+
+					& > div > div 
+					{
+						vertical-align:top;
+						padding:20px;
+					}
+				}
+
+				.views-field-body-1
+				{
+					display:block;
+					text-align:left;
+				}
+			}
+		}
+	}
+
+	#copyright,
+	#site-by-cci
+	{
+		float:none;
+		text-align:center;
+		margin-top:0;
+		font-size:14px;
+	}
+	#copyright 
+	{
+		margin-top:30px;
+	}
+}

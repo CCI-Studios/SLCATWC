@@ -1,0 +1,18 @@
+name = Sarnia-Lambton Committee Against the Trafficking of Women and Children
+description = Sarnia-Lambton Committee Against the Trafficking of Women and Children Custom
+core = 7.x
+
+scripts[] = js/jquery.dotdotdot.min.js
+scripts[] = js/blocks.js
+scripts[] = js/news.js
+
+stylesheets[all][] = stylesheets/screen.css
+
+regions[navigation] = Navigation
+regions[header] = Header
+regions[help] = Help
+regions[content] = Content
+regions[sidebar_first] = Sidebar
+regions[widgets] = Widgets
+regions[footer] = Footer
+
