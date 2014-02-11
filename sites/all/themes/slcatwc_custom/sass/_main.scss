@@ -472,6 +472,7 @@ body.page-news
 				width:310px;
 				height:310px;
 				position:absolute;
+				word-wrap:break-word;
 
 				& > .content 
 				{
@@ -556,10 +557,16 @@ body.page-news
 						margin:5px;
 						min-height:870px;
 
-						& > div > div
-						 {
-						 	vertical-align:top;
-						 }
+						& > div
+						{
+							display:block;
+
+							& > div
+							{
+								display:block;
+								vertical-align:top;
+							}
+						}
 					}
 
 					.views-field-title 
@@ -582,12 +589,14 @@ body.page-news
 				{
 					font-size:28px;
 					font-weight:bold;
+					line-height:90%;
 				}
-				.views-field-created
+				.views-field-date
 				{
 					font-size:16px;
 					font-weight:bold;
 					margin-bottom:8px;
+					line-height:90%;
 				}
 				.views-field-body 
 				{
@@ -597,7 +606,7 @@ body.page-news
 
 					.body-content
 					{
-						height:199px;
+						height:175px;
 					}
 				}
 				.views-field-body-1 
