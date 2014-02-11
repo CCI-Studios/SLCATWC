@@ -1,0 +1,17 @@
+name = SLCATWC
+core = 7.x
+version = 7.x-1.0
+project = slcatwc
+dependencies[] = date
+dependencies[] = features
+dependencies[] = text
+dependencies[] = views
+features[ctools][] = views:views_default:3.0
+features[features_api][] = api:2
+features[field_base][] = body
+features[field_base][] = field_date
+features[field_instance][] = node-article-body
+features[field_instance][] = node-article-field_date
+features[node][] = article
+features[views_view][] = news
+features_exclude[dependencies][ctools] = ctools
