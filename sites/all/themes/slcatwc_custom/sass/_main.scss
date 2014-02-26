@@ -287,8 +287,19 @@ body
 }
 #block-block-5 
 {
-	background:#3f5aa5 url(../images/bg/fb.png) no-repeat left top;
-	background-size:cover!important;
+	background:#3f5aa5 url(../images/bg/bg-glow.png) no-repeat center center;
+	
+	& > .content 
+	{
+		background:url(../images/bg/fb.png) no-repeat center center;
+		text-indent:-99999px;
+	}
+
+	&:hover > .content 
+	{
+		background-image:url(../images/bg/fb-hover.png);
+		text-indent:0;
+	}
 }
 #block-block-6
 {
@@ -300,11 +311,19 @@ body
 }
 #block-block-8
 {
-	background:#32ccfe url(../images/bg/tw.png) no-repeat center center;
+	background:#32ccfe url(../images/bg/bg-glow.png) no-repeat center center;
 
 	& > .content
 	{
 		font-size:26px!important;
+		background:url(../images/bg/tw.png) no-repeat center center;
+		text-indent:-99999px;
+	}
+
+	&:hover > .content 
+	{
+		text-indent:0;
+		background-image:url(../images/bg/tw-hover.png);
 	}
 }
 #block-block-9
@@ -419,8 +438,6 @@ body.page-news
 	#block-block-8
 	{
 		@extend .block-1x2;
-
-		background-image:url(../images/bg/tw-large.png);
 	}
 
 	#block-system-main.block
@@ -571,7 +588,6 @@ body.page-news
 
 					.views-field-title 
 					{
-						/*font-size:28px;*/
 						margin-bottom:3px;
 					}
 					.views-field-body

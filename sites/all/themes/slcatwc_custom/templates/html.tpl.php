@@ -49,7 +49,9 @@
   <?php print $head; ?>
   <script>
     if (window.innerWidth <= 540)
-      document.write('<meta name="viewport" content="width=540" />');
+      document.write('<meta name="viewport" content="width=540,user-scalable=no" />');
+    else 
+      document.write('<meta name="viewport" content="width=990" />');
   </script>
   
   <title><?php print $head_title; ?></title>
