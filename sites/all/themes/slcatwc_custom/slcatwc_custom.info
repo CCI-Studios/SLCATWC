@@ -4,6 +4,7 @@ core = 7.x
 
 scripts[] = js/jquery.dotdotdot.min.js
 scripts[] = js/blocks.js
+scripts[] = js/about.js
 scripts[] = js/news.js
 
 stylesheets[all][] = stylesheets/screen.css

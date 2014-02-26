@@ -229,6 +229,81 @@
 		}
 	}
 
+	body.page-about #block-block-8 
+	{
+		width:100%!important;
+	}
+	body.page-about #block-system-main.block .view-about
+	{
+		margin:0;
+
+		.views-row
+		{
+			width:100%!important;
+			height:200px;
+			float:none;
+			margin:15px 0;
+			position:relative;
+			top:0!important;
+			right:0!important;
+			bottom:0!important;
+			left:0!important;
+			
+
+			& > .content
+			{
+				text-align:center!important;
+
+				& > div > div 
+				{
+					vertical-align:middle!important;
+				}
+			}
+
+			.views-field-title
+			{
+				font-size:30px!important;
+				margin-bottom:10px;
+			}
+
+			.views-field-body 
+			{
+				font-size:22px;
+				line-height:100%;
+				text-align:left;
+			}
+
+			&.open
+			{
+				overflow:hidden;
+				height:auto;
+
+				& > .content 
+				{
+					position:static;
+					margin:5px;
+
+					& > div > div 
+					{
+						vertical-align:top;
+						padding:20px;
+					}
+				}
+
+				.views-field-body
+				{
+					display:block;
+				}
+			}
+		}
+	}
+
+	#block-block-17
+	{
+		float:none;
+		margin:20px 0 -20px 55px;
+	}
+
 	#copyright,
 	#site-by-cci
 	{
