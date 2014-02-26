@@ -24,8 +24,7 @@
 			.data("width", $container.width())
 			.data("height", $container.height())
 			.addClass("clone")
-			.append($("<a href='#' class='close' title='Click to close'>Click to close</a>")
-				.click(close))
+			.append($("<a href='#' class='close' title='Click to close'>Click to close</a>").click(close))
 			.appendTo($container.parent())
 			.animate({
 				"top":"0",
@@ -64,8 +63,13 @@
 		return false;
 	}
 
-	function close(e) {
-		var $container = $(this).parents(".views-row.clone");
+	function close() {
+		var $container = $(this);
+		if (!$container.hasClass("views-row"))
+			$container = $(this).parents(".views-row.clone");
+
+		if (/iPad/i.test(navigator.userAgent))
+			$(".view-news .views-row-2").hide();
 		$container.animate({
 			"top":$container.data("top")+"px",
 			"left":$container.data("left")+"px",
@@ -73,9 +77,8 @@
 			"height":$container.data("height")+"px"
 		}, {complete:function(){
 				$(this).remove();
-				if (/iPhone|iPad|iPod/i.test(navigator.userAgent)) {
-				    window.location.reload();
-				}
+				if (/iPad/i.test(navigator.userAgent))
+					setTimeout(function(){$(".view-news .views-row-2").show();}, 1);
 			}})
 		.css({
 			"min-height":"0"
@@ -97,7 +100,6 @@
 			});
 		}
 
-		e.stopPropagation();
 		return false;
 	}
 
