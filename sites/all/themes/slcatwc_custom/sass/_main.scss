@@ -842,3 +842,23 @@ body.page-about
 		}
 	}
 }
+
+.accordion 
+{
+	h3 
+	{
+		cursor:pointer;
+	}
+
+	& > div 
+	{
+		max-height:0;
+		overflow:hidden;
+
+		&.open 
+		{
+			max-height:600px;
+			transition:max-height ease 800ms;
+		}
+	}
+}
