@@ -848,6 +848,28 @@ body.page-about
 	h3 
 	{
 		cursor:pointer;
+
+		&:before
+		{ 
+			content:"";
+			border-color:transparent white;
+			border-style:solid;
+			border-width:6px 0 6px 8px;
+			display:inline-block;
+			vertical-align:middle;
+			height:0;
+			width:0;
+			margin-left:2px;
+			margin-right:4px;
+		}
+
+		&.open:before
+		{
+			border-color:white transparent;
+			border-width:0 6px 8px 6px;
+			margin-right:2px;
+			margin-left:0;
+		}
 	}
 
 	& > div 
@@ -858,7 +880,7 @@ body.page-about
 		&.open 
 		{
 			max-height:600px;
-			transition:max-height ease 800ms;
+			transition:max-height ease 1000ms;
 		}
 	}
 }
