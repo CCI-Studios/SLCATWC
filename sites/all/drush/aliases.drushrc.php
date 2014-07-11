@@ -10,3 +10,13 @@ $aliases['dev'] = array(
 	),
 	'ssh-options'=> '-p 37241'
 );
+
+$aliases['live'] = array(
+	'uri'=> 'slcatwc.ccistaging.com',
+	'root' => '/home/ht/subdomains/live/public_html',
+	'remote-host'=> 'host.lambtonshield.com',
+	'remote-user'=> 'ht',
+	'path-aliases'=> array(
+		'%files'=> 'sites/default/files',
+	)
+);

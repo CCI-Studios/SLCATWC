@@ -134,10 +134,6 @@
 				font-size:36px;
 			}
 		}
-		&#block-block-16 
-		{
-			background-image:url(../images/bg/trillium-large.png);
-		}
 	}
 
 	#block-system-main.block
@@ -149,6 +145,12 @@
 		& > .content 
 		{
 			min-height:0;
+		}
+
+		img 
+		{
+			max-width:100%;
+			height:auto!important;
 		}
 	}
 

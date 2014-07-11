@@ -118,7 +118,10 @@
 
     <div id="footer"><div class="section">
       <?php print render($page['footer']); ?>
-      <div id="copyright">&copy; Sarnia-Lambton Committee Against the Trafficking of Women and Children</div>
+      <div id="copyright">
+        &copy; Sarnia-Lambton Committee Against the Trafficking of Women and Children<br>
+        <a href="mailto:sarniaagainsthumantrafficking@gmail.com">sarniaagainsthumantrafficking@gmail.com</a>
+      </div>
       <div id="site-by-cci">Site by <a href="http://ccistudios.com" target="_blank">CCI Studios</a></div>
     </div></div> <!-- /.section, /#footer -->
 
